@@ -1,0 +1,15 @@
+[
+  {
+    "name": "google",
+    "url": "https://www.google.ru/"
+  },
+  {
+    "name": "stackoverflow",
+    "url": "https://stackoverflow.com/"
+  },
+  {
+    "name": "habr",
+    "url": "https://habr.com/ru/"
+  }
+]
+
