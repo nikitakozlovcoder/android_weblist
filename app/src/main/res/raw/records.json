@@ -10,6 +10,14 @@
   {
     "name": "habr",
     "url": "https://habr.com/ru/"
+  },
+  {
+    "name": "mail",
+    "url": "https://mail.ru/"
+  },
+  {
+    "name": "w3school",
+    "url": "https://www.w3schools.com/html/html_iframe.asp"
   }
 ]
 

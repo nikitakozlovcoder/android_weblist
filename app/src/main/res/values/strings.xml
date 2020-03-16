@@ -5,4 +5,5 @@
     <string name="login_button">Войти</string>
     <string name="error_password">Не верный пароль</string>
     <string name="error_login">Пользователь не найден</string>
+    <string name="action_logout">Выйти</string>
 </resources>

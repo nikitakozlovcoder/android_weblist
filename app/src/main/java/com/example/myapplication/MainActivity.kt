@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
                 val intent = Intent(this, ListActivity::class.java)
                 startActivity(intent)
-                this.finish()
+
             }
             0->{
                 passwordWrapper?.error = resources.getString(R.string.error_password)

@@ -24,7 +24,6 @@ class WebviewActivity : AppCompatActivity() {
                     view: WebView,
                     url: String
                 ): Boolean {
-                    loadUrl(url)
                     return false
                 }
             }
