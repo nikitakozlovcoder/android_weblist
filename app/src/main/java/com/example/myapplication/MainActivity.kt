@@ -3,7 +3,6 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -30,14 +29,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onResume() {
-        super.onResume()
-        if (User.Logged){
-            val intent = Intent(this, ListActivity::class.java)
-            startActivity(intent)
-        }
-
-    }
 
 
     private fun clickListener(v: View) {
@@ -56,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             -1->{
                 loginWrapper?.error = resources.getString(R.string.error_login)
                 passwordWrapper?.error = null
+
             }
         }
     }

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RecordListAdapter(val records: ArrayList<Record>, val context: Context, val listener: (record: Record) -> Unit) : RecyclerView.Adapter<RecordListAdapter.ViewHolder>() {
+class RecordListAdapter(private val records: ArrayList<Record>, private val listener: (record: Record) -> Unit) : RecyclerView.Adapter<RecordListAdapter.ViewHolder>() {
 
     inner class ViewHolder(val view: View): RecyclerView.ViewHolder(view) {
 

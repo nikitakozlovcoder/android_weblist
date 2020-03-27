@@ -2,7 +2,6 @@ package com.example.myapplication
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import org.json.JSONObject
 import java.lang.Exception
 
@@ -12,8 +11,7 @@ object User {
 
     fun auth(name:String, password:String, context: Context): Int {
         val str:String = context.resources.openRawResource(R.raw.users).bufferedReader().use { it.readText() }
-        Log.i("Name", name)
-        Log.i("Pass", password)
+
         try {
 
             if (JSONObject(str).getString(name.toLowerCase()) == password){

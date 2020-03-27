@@ -29,7 +29,7 @@ class ListActivity : AppCompatActivity() {
 
 
         viewManager = LinearLayoutManager(this)
-        viewAdapter = RecordListAdapter(getData(), this){ it->
+        viewAdapter = RecordListAdapter(getData()){ it->
 
             builder.setTitle("Открыть в:").setItems(arrayOf("Приложении", "Браузере")) { dialog, which->
                 when(which){
