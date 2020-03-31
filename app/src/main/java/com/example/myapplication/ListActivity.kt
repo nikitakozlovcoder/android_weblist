@@ -5,7 +5,6 @@ import android.app.Dialog
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -17,7 +16,7 @@ import com.google.gson.Gson
 class ListActivity : AppCompatActivity() {
 
     private lateinit var viewAdapter: RecordListAdapter
-    private lateinit var viewManager: LinearLayoutManager
+
     private lateinit var list: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +27,7 @@ class ListActivity : AppCompatActivity() {
         val builder: AlertDialog.Builder = AlertDialog.Builder(this)
 
 
-        viewManager = LinearLayoutManager(this)
+
         viewAdapter = RecordListAdapter(getData()){ it->
 
             builder.setTitle("Открыть в:").setItems(arrayOf("Приложении", "Браузере")) { dialog, which->
@@ -45,7 +44,7 @@ class ListActivity : AppCompatActivity() {
         list = findViewById(R.id.list)
         list.apply {
             setHasFixedSize(true)
-            layoutManager = viewManager
+            layoutManager = LinearLayoutManager(context)
             adapter = viewAdapter
         }
     }
